@@ -1,0 +1,19 @@
+{
+    
+    "manifest_version": 3,
+    "name": "Remove Facebook's annoying floating video feature",
+    "version": "0.0.0.1",
+  
+    
+    "description": "Works in the background to prevent the Picture-in-Picture feature in facebook (the video still playing after scrolling past it)",
+    "icons": {
+        "16" : "17.png",
+        "32" : "17.png",
+        "128" : "17.png"
+    },
+    "content_scripts" :[{
+        "matches" : ["https://www.facebook.com/*"],
+        "js" : ["script.js"]
+    }]
+
+}
